@@ -8,6 +8,8 @@ class Client:
     
     def __init__(self):
         pass
+    def add_name(self,name):
+        self.name = name
     
 class MyHandler(Handler):
      
@@ -18,8 +20,9 @@ class MyHandler(Handler):
         event_queue.append(('quit', self))
      
     def on_msg(self, msg):
+        temp = []
         for m in msg.values():
-            print m
+            temp.append(m)
         messages.append(msg)
  
  

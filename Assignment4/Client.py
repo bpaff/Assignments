@@ -26,7 +26,7 @@ class Client(Handler):
             print name, " has left the room."
         else:
             name = temp[1]
-            print name, ":", temp[0]
+            print name, "said:", temp[0]
             
         
         
