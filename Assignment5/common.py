@@ -8,7 +8,7 @@ def collide_boxes(box1, box2):
     
 
 class Model():
-    
+    bot_ate_pellet = 0
     cmd_directions = {'up': (0, -1),
                       'down': (0, 1),
                       'left': (-1, 0),
@@ -45,4 +45,6 @@ class Model():
                 self.mybox[2] *= 1.2
                 self.mybox[3] *= 1.2
                 self.pellets[index] = [randint(10, 380), randint(10, 280), 5, 5]
+                self.bot_ate_pellet = 1
+                
             
