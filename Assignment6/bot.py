@@ -7,7 +7,6 @@ from time import sleep
 from network import Handler, poll
 from common import Model
 from random import randint
-#model in this module
 
 
 
